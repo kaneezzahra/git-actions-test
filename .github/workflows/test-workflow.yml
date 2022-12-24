@@ -8,8 +8,8 @@ jobs:
      steps:
        - name: echo string
          run: echo "hello world"
-      #  - name: multiline script
-      #    run: |
-      #      node -v
-      #      npm -v
-      #      python -v
+       - name: multiline script
+         run: |
+           node -v
+           npm -v
+           python -v
