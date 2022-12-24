@@ -19,6 +19,7 @@ jobs:
             print(platform.processor())
           shell: python
     run-win-cmd:
+      needs: ["run-shell-cmd"]
       runs-on: windows-latest
       steps:
         - name: dir pwrshell
