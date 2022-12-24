@@ -4,17 +4,25 @@ on: [push]
 
 jobs:
     run-shell-cmd:
-     runs-on: ubuntu-latest
-     steps:
-       - name: echo string
-         run: echo "hello world"
-       - name: multiline script
-         run: |
-           node -v
-           npm -v
-           python -v
-       - name: python cmd
-         run: |
-           import platform
-           print(platform.processor())
-         shell: python
+      runs-on: ubuntu-latest
+      steps:
+        - name: echo string
+          run: echo "hello world"
+        - name: multiline script
+          run: |
+            node -v
+            npm -v
+            python -v
+        - name: python cmd
+          run: |
+            import platform
+            print(platform.processor())
+          shell: python
+    run-win-cmd:
+      runs-on: windows-latest
+      steps:
+        - name: dir pwrshell
+          run: Get-Location
+        - name: dir bash
+          run: pwd
+          shell: bash
