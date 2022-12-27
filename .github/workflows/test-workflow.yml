@@ -1,6 +1,9 @@
 name: Shell cmd
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+    types: [opened, reopened]
 
 jobs:
     run-shell-cmd:
