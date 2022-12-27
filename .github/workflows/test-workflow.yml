@@ -1,5 +1,6 @@
 name: Shell cmd
 
+
 on: 
   push:
   pull_request:
@@ -10,7 +11,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: echo string
-          run: echo "hello world"
+          run: echo "hello Snowy"
         - name: multiline script
           run: |
             node -v
