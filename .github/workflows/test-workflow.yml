@@ -1,16 +1,18 @@
 name: Shell cmd
 
+
 on: 
   push:
   pull_request:
     types: [closed, opened]
+
 
 jobs:
     run-shell-cmd:
       runs-on: ubuntu-latest
       steps:
         - name: echo string
-          run: echo "hello world"
+          run: echo "hello Snowy"
         - name: multiline script
           run: |
             node -v
