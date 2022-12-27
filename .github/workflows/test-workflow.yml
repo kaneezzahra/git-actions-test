@@ -3,7 +3,7 @@ name: Shell cmd
 on: 
   push:
   pull_request:
-    types: [closed, reopened, opened]
+    types: [closed, opened]
 
 jobs:
     run-shell-cmd:
