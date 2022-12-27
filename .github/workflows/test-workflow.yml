@@ -1,9 +1,11 @@
 name: Shell cmd
 
-on:
+
+on: 
   push:
   pull_request:
-    types: [opened, reopened]
+    types: [closed, opened]
+
 
 jobs:
     run-shell-cmd:
