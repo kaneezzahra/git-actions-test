@@ -3,6 +3,7 @@ name: Shell cmd
 
 on: 
   push:
+  pull:
   pull_request:
     types: [closed, reopened, opened]
 
