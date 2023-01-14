@@ -29,6 +29,8 @@ jobs:
         - name: dir pwrshell
           run: Get-Location
         - name: dir bash
-          run: pwd
+          run: |
+            pwd
+            ls
           shell: bash
 
