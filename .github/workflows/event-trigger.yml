@@ -2,7 +2,6 @@ name: trigger on event
 
 on: 
   push:
-  pull:
   pull_request:
     types: [closed, reopened, opened]
 
