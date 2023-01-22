@@ -2,7 +2,7 @@ name: trigger on event
 
 on:
   repository_dispatch:
-    types: [build]
+    types: [build, ext_trig]
   # schedule:
   #   - cron: "*/5 * * * *" 
   #push:
