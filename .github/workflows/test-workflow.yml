@@ -1,11 +1,6 @@
 name: Shell cmd
 
-<<<<<<< HEAD
-
 on: [pull_request]
-=======
-on: [push]
->>>>>>> e404cf0367193aa4c9234c1b5cb303d1b37925d2
 
 jobs:
     run-shell-cmd:
