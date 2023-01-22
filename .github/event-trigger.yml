@@ -1,0 +1,14 @@
+name: trigger on event
+
+on: 
+  push:
+  pull:
+  pull_request:
+    types: [closed, reopened, opened]
+
+jobs:
+    trigger-on-event:
+      runs-on: ubuntu-latest
+      steps:
+        - name: echo string
+          run: echo "this workflow was trigger by an event"
